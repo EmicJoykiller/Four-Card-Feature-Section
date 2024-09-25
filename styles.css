@@ -44,15 +44,13 @@ html {
     color: var(--Very-Dark-Blue);
 }
 
-.title_2{
-    width: 92%;
-}
+
 
 .header p{
     margin-top: 1.5rem;
     line-height: 1.5rem;
     font-weight: 600;
-    width: 100%;
+    
     color: var(--Grayish-Blue);
 }
 
@@ -70,6 +68,7 @@ html {
     box-shadow: 1px solid(234, 12%, 34%);
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .card h1{
@@ -101,4 +100,23 @@ html {
 
 .card4{
     border-top: 4px solid var(--Blue);
+}
+
+
+@media (min-width:375px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        padding: 3em 2em;
+        background-color: var(--Very-Light-Gray);
+        font-size: 85%;
+        
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        
+    }
 }
