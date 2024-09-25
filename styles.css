@@ -10,6 +10,9 @@
   --Cyan: hsl(180, 62%, 55%);
   --Orange: hsl(34, 97%, 64%);
   --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
 body,
@@ -22,4 +25,24 @@ html {
 
 .main{
     display: flex;
+    flex-direction: column;
+    padding: 3em 2em;
+    background-color: var(--Very-Light-Gray);
+    font-size: 85%;
+    
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3em;
+    
+    
+}
+
+.header p{
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: var(--Grayish-Blue);
 }
