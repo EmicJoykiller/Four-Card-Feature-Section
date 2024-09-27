@@ -177,14 +177,13 @@ html {
 
 .header{
     text-align: center;
+    margin-bottom: 5em;
 }
 
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 1.5rem;
-    grid-template-rows: auto;
-    
     
 }
 
@@ -196,23 +195,69 @@ html {
     grid-template-columns: repeat(1fr);
 }
 
-.card1{
-    border-top: 4px solid var(--Cyan);
-}
-
 
 .card-image{
     padding-top: 3em;
     justify-self: end;
 }
 
-.card .card1{
-    grid-column: 1 / span 2; 
-  
+
+.card1{
+    border-top: 4px solid var(--Cyan);
+    
+}
+
+.card2{
+    border-top: 4px solid var(--Red);
+    
+}
+
+.card3{
+    border-top: 4px solid var(--Orange);
+    
+}
+
+.card4{
+    border-top: 4px solid var(--Blue);
+    
 }
 
 
+@media(min-width:1130px){
+    .cards{
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+            "start mid1 end"
+            "start mid2 end";     
+        
+        
+    }
 
+    .card1{
+        border-top: 4px solid var(--Cyan);
+        grid-area: start;
+        align-self: center;
+    }
+    
+    .card2{
+        border-top: 4px solid var(--Red);
+        grid-area: mid1;
+    }
+    
+    .card3{
+        border-top: 4px solid var(--Orange);
+        grid-area: mid2;
+    }
+    
+    .card4{
+        border-top: 4px solid var(--Blue);
+        grid-area: end;
+        align-self: center;
+    }
+}
 
 
    
