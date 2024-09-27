@@ -123,6 +123,8 @@ html {
 }
 
 */
+
+/* grid 1
 .main{
   
     padding: 3em 2em;
@@ -140,12 +142,7 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 1.5rem;
-    grid-template-areas:
-        "card1"
-        "card2"
-        "card3"
-        "card4"
-     ;
+    
 }
 
 .card{
@@ -165,3 +162,57 @@ html {
     padding-top: 3em;
     justify-self: end;
 }
+
+*/
+
+
+.main{
+  
+    padding: 3em 2em;
+    background-color: var(--Very-Light-Gray);
+    font-size: 85%;
+    width: 100%;
+    
+}
+
+.header{
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    grid-template-rows: auto;
+    
+    
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+
+.card1{
+    border-top: 4px solid var(--Cyan);
+}
+
+
+.card-image{
+    padding-top: 3em;
+    justify-self: end;
+}
+
+.card .card1{
+    grid-column: 1 / span 2; 
+  
+}
+
+
+
+
+
+   
